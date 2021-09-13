@@ -1,0 +1,138 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+   background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/background.jpg");
+   background-size: 100vh 100vw;
+   background-size: cover;
+   min-height:100vh;
+   display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container
+{
+    
+    max-width: 100%;
+    background-color:white;
+    width:calc(100vw - 65vw)
+
+}
+
+.header
+{
+    padding:17px;
+    text-align: center;
+    background:linear-gradient(#48c6ef , #6f86d6);
+    
+}
+
+#form
+{
+    padding:30px;    
+}
+
+.form-control
+{
+    margin-bottom:20px;
+    position: relative;
+}
+
+.form-control label
+{
+    display:inline-block;
+    margin-bottom:5px;
+    font-weight: bold;
+}
+
+.form-control input
+{
+    width:100%;
+    border:2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size:14px;
+    padding:12px;
+}
+.form-control input:focus
+{
+    outline:0;
+    border-color:#777;
+}
+
+.form-control.success input
+{
+    border-color:green;
+}
+.form-control.error input
+{
+    border-color:tomato;
+}
+
+.form-control i
+{
+    position: absolute;
+    right:12px;
+    top:38px;
+    visibility:hidden;
+}
+
+.form-control.success i.fa-check-circle
+{
+   color:green;
+   visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle
+{
+   color:red;
+   visibility: visible;
+}
+
+.form-control small
+{
+    visibility:hidden;
+    color:red;
+    position: absolute;
+    left:0;
+}
+.form-control.error small
+{
+    visibility:visible;
+}
+
+.form .btn
+{
+    background:linear-gradient(#48c6ef , #6f86d6);
+    padding:8px;
+    width:100%;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.form .btn:hover
+{
+    background: linear-gradient( #a4508b 0%, #5f0a87 74%);
+
+    
+
+}
+
+@media(max-width:998px)
+{
+    .container
+    {
+        width:calc(100vw-35vw);
+        max-width:100%;
+    }
+}
